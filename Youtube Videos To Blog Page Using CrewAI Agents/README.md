@@ -61,29 +61,29 @@ This project uses **CrewAI Agents** to transform YouTube video content into a co
    cd <repository_folder>
    
 2. **Create a Conda Environment:**
-   bash
-   conda create -n yt-blog-crew python=3.8 -y
+    ```bash
+    conda create -n yt-blog-crew python=3.8 -y
    
 3.**Activate the Environment:**
-   bash
+    ```bash
 
-  conda activate yt-blog-crew
+   conda activate yt-blog-crew
   
 4.**Install Dependencies:**
   Install the required libraries using requirements.txt:
-   bash 
+   ```bash 
    pip install -r requirements.txt
    
 5.**Set Up Environment Variables:**
 Create a .env file in the project root with the following content:
-  bash
+  ```bash
   OPENAI_API_KEY=your_openai_api_key
   GROQ_API_KEY=your_groq_api_key
   
 1.**How to Run**
   Run the Crew Task Execution:
   Start the task execution by running the following Python script:
-   bash
+   ```bash
    python crew.py
    
 2.**Interact with the System:**
@@ -98,11 +98,11 @@ Create a .env file in the project root with the following content:
  - The final blog post will be saved in a file, for example, new-blog-post.md.
 
 **Code Overview**
- - Agent Configuration:
-   Agents like blog_researcher and blog_writer are configured with specific goals to handle the research and writing tasks, respectively.
+ **Agent Configuration:**
+   - Agents like blog_researcher and blog_writer are configured with specific goals to handle the research and writing tasks, respectively.
 
- - Task Definitions:
-   The research and writing tasks define the descriptions, expected outputs, and tools required for each task. The YoutubeChannelSearchTool is used for searching YouTube videos.
+ **Task Definitions:**
+   - The research and writing tasks define the descriptions, expected outputs, and tools required for each task. The YoutubeChannelSearchTool is used for searching YouTube videos.
 
- - Crew Management:
-   The Crew class orchestrates the agents and tasks, with an option to manage task execution sequentially.
+ **Crew Management:**
+   - The Crew class orchestrates the agents and tasks, with an option to manage task execution sequentially.
