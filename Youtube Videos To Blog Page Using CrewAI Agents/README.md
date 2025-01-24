@@ -66,25 +66,25 @@ This project uses **CrewAI Agents** to transform YouTube video content into a co
    
 3.**Activate the Environment:**
     ```bash
-
-   conda activate yt-blog-crew
+    conda activate yt-blog-crew
   
 4.**Install Dependencies:**
   Install the required libraries using requirements.txt:
+  
    ```bash 
    pip install -r requirements.txt
    
 5.**Set Up Environment Variables:**
-Create a .env file in the project root with the following content:
-  ```bash
-  OPENAI_API_KEY=your_openai_api_key
-  GROQ_API_KEY=your_groq_api_key
+  Create a .env file in the project root with the following content:
+   ```bash
+   OPENAI_API_KEY=your_openai_api_key
+   GROQ_API_KEY=your_groq_api_key
   
 1.**How to Run**
   Run the Crew Task Execution:
   Start the task execution by running the following Python script:
-   ```bash
-   python crew.py
+    ```bash
+    python crew.py
    
 2.**Interact with the System:**
 
